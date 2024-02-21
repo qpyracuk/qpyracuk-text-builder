@@ -84,7 +84,6 @@ export default class Builder {
 
   private $__buildTag(node: INode, stack: INode[]) {
     const parentTag = stack[stack.length - 1];
-    console.log(node.key);
     const key = this.$__safeKey(node.key);
     const tab = this.$__tab(node.level);
     const isPrimitive = PRIMITIVES.has(node.type);
